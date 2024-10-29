@@ -1,0 +1,53 @@
+# ROS2-specific build and install directories
+/build/
+/install/
+/log/
+/install_*  # if specific install directories exist
+
+# Ignore workspace-specific CMake and other build configurations
+/CMakeLists.txt
+/CMakeCache.txt
+.colcon/
+
+# ROS2 packages built with colcon
+colcon.log
+
+# IDE-specific files (Uncomment if you use one of these)
+# For Visual Studio Code
+.vscode/
+# For JetBrains CLion
+.idea/
+cmake-build-debug/
+cmake-build-release/
+
+# Python cache and virtual environment files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pydistutils.cfg
+pip-wheel-metadata/
+
+# ROS2 Python environment
+.venv/
+
+# Logs and other temporary files
+*.log
+*.bag
+*.db
+*.sqlite3
+
+# ROS2 config files generated during runtime
+*.yaml
+*.rviz
+
+# Miscellaneous
+*.swp
+*.swo
+*.swn
+*.orig
+*.bak
+
+# ROS2 launch and setup artifacts
+launch/*.pyc
+.launch.py
